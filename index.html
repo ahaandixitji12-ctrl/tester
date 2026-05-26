@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sigma Snowcones (Order Now!)</title>
+<link rel="icon" type="image/png" href="images/logo6.png">
+<meta charset="utf-8">
+<meta name="description" content="Wireframing Practice">
+<meta name="keywords" content="HTML, CSS, Wireframing">
+<meta name="author" content="Your Name">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="200">
+
+<style>
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, header, nav, main, section, footer, div {
+  border: solid 1px black;
+}
+
+ul li, ul a {
+  border: none;
+}
+
+header {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;   
+  align-items: center;
+  background-color: teal;
+  border: solid 1px transparent;
+}
+
+#logocontainer {
+  height: 250px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px transparent;
+}
+
+nav {
+  height: 250px;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: teal;
+}
+
+.buttoncontainer {
+  height: 250px;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;   
+}
+
+button {
+  padding: 18px 36px;
+  background-color: teal;
+  color: white;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #FF4500;
+}
+
+main {
+  height: 1200px;
+  width: 100%;
+  display: flex;
+}
+
+aside {
+  height: 1200px;
+  width: 20%;
+  border: solid 1px transparent;
+}
+
+#primarysection {
+  height: 1200px;
+  width: 100%;
+}
+
+#ps1 {
+  height: 480px;
+  width: 100%;
+}
+
+#tophalf {
+  height: 180px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px transparent;
+  background-color: tan;
+}
+
+#bottomhalf {
+  height: 240px;
+  width: 100%;
+  display: flex;
+}
+
+.smallcontentbox {
+  height: 240px;
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.flavorSpotlight {
+  background-color: #FF4500;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
+}
+
+.seasonalSpecials {
+  background-color: #FFD700;
+  color: black;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.customerFavorites {
+  background-color: #FF4500;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
+}
+
+#ps2 {
+  height: 480px;
+  width: 100%;
+  display: flex;
+}
+
+.bigimageholder {
+  height: 480px;
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigimageholder img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#ps3 {
+  height: 170px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tan;
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: black;
+}
+
+footer {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#legallinks {
+  height: 150px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialmediaicon {
+  height: 150px;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialmediaicon img {
+  height: 80px;   
+  width: 80px;    
+  transition: transform 0.3s ease;
+}
+
+.socialmediaicon img:hover {
+  transform: scale(1.1);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 95%;   
+}
+
+ul li {
+  flex: 1;                         
+  text-align: center;
+}
+
+ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  padding: 14px 28px;
+  transition: all 0.3s ease;
+}
+
+ul a:hover {
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#legallinks a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  padding: 14px 28px;
+  transition: all 0.3s ease;
+}
+
+#legallinks a:hover {
+  color: white;
+  background-color: #FF4500;
+  border-radius: 10px;
+}
+</style>
+</head>
+<body>
+<header>
+  <div id="logocontainer">
+    <img src="images/logo6.png" alt="Sigma Snowcones Logo" height="250" width="300">
+  </div>
+  <nav>
+    <img src="images/logo7.png" alt="Sigma Snowcones Banner" height="250" width="600">
+  </nav>
+  <div class="buttoncontainer">
+    <button>Order Now</button>
+  </div>
+  <div class="buttoncontainer">
+    <button>Rewards</button>
+  </div>
+</header>
+<main>
+  <section id="primarysection">
+    <div id="ps1">
+      <div id="tophalf">
+        <ul>
+          <li><a href="snowcone business company.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="calendar.html">Calendar</a></li>
+          <li><a href="contact us.html">Contact</a></li>
+        </ul>
+      </div>
+      <div id="bottomhalf">
+        <div class="smallcontentbox flavorSpotlight">
+          <h3>Flavor Spotlight</h3>
+          <p>Blue Raspberry Blast</p>
+          <p>Mango Tango</p>
+          <p>Cotton Candy Cloud</p>
+        </div>
+        <div class="smallcontentbox seasonalSpecials">
+          <h3>Seasonal Specials</h3>
+          <p>Winter Wonderland (Peppermint + Vanilla)</p>
+          <p>Summer Splash (Watermelon + Lime)</p>
+          <p>Autumn Apple Crisp (Spiced Apple + Caramel)</p>
+        </div>
+        <div class="smallcontentbox customerFavorites">
+          <h3>Customer Favorites</h3>
+          <p>Rainbow Swirl</p>
+          <p>Piña Colada Paradise</p>
+          <p>Strawberry Lemonade Chill</p>
+        </div>
+      </div>
+      <div id="ps2">
+        <div class="bigimageholder">
+          <img src="images/snow1.jpg" alt="Snowcone Image 1">
+        </div>
+        <div class="bigimageholder">
+          <img src="images/snow2.webp" alt="Snowcone Image 2">
+        </div>
+        <div class="bigimageholder">
+          <img src="images/snow3.webp" alt="Snowcone Image 3">
+        </div>
+      </div>
+      <div id="ps3"><p>Join our Rewards Program today!</p></div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div id="legallinks">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+    <a href="#">Accessibility</a>
+    <a href="#">Cookie Policy</a>
+  </div>
+    <div class="socialmediaicon">
+    <a href="https://www.facebook.com" target="_blank">
+      <img src="images/facebook.png" alt="Facebook Logo">
+    </a>
+  </div>
+  <div class="socialmediaicon">
+    <a href="https://www.instagram.com" target="_blank">
+      <img src="images/insta.png" alt="Instagram Logo">
+    </a>
+  </div>
+  <div class="socialmediaicon">
+    <a href="https://www.twitter.com" target="_blank">
+      <img src="images/twitter.png" alt="Twitter Logo">
+    </a>
+  </div>
+  <div class="socialmediaicon">
+    <a href="https://www.tiktok.com" target="_blank">
+      <img src="images/tic.png" alt="TikTok Logo">

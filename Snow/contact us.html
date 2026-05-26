@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/png" href="images/logo6.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+
+<style>
+  body{
+    margin: 0;
+    font-family: Verdana, cursive, sans-serif;
+    background: #f4f4f4;
+	}
+
+  nav{
+    background: teal;
+    padding: 14px 0;
+    text-align: center;
+	}
+
+  nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+	}
+
+  nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 14px;
+	}
+
+  nav a:hover{
+    background: #FF4500;
+	}
+
+  h1{
+    text-align: center;
+    margin-top: 40px;
+    color: teal;
+	}
+
+  .contact-info{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #333;
+	}
+
+  .form-container{
+    width: 65%;
+    background: white;
+    margin: 40px auto;
+    padding: 25px;
+    }
+
+  form label{
+    font-weight: bold;
+    color: teal;
+	}
+
+  form input, form select, form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 16px;
+    border: 2px solid teal;
+    border-radius: 0;
+    font-size: 1rem;
+	}
+
+  form button{
+    background: teal;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+	}
+
+  form button:hover{
+    background: #FF4500;
+	}
+
+  img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    margin-top: 40px;
+    border-top: 4px solid teal;
+	}
+	
+	footer {
+      background-color: teal;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+	
+	footer {
+		height: 150px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+	
+	.socialmediaicon {
+		height: 150px;
+		width: 15%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		}
+
+	.socialmediaicon img {
+		height: 80px;   
+		width: 80px;    
+		transition: transform 0.3s ease;
+		}
+
+	.socialmediaicon img:hover {
+		transform: scale(1.1);
+		}
+	
+	
+</style>
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><a href="snowcone business company.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="calendar.html">Calendar</a></li>
+    <li><a href="contact us.html">Contact</a></li>
+  </ul>
+</nav>
+
+<h1>Contact Us</h1>
+
+<div class="contact-info">
+  <p><strong>Email:</strong> support@snowconeco.com</p>
+  <p><strong>Phone:</strong> (954) 674-6767</p>
+</div>
+
+<div class="form-container">
+  <h2 style="text-align:center; color: teal;">Send Us a Message</h2>
+
+  <form>
+    <label>Your Name</label>
+    <input type="text" placeholder="Enter your name" required>
+
+    <label>Your Email</label>
+    <input type="email" placeholder="Enter your email" required>
+
+    <label>Your Phone Number</label>
+    <input type="tel" placeholder="Enter your phone number">
+
+    <label>Reason for Contact</label>
+    <select required>
+      <option value="">Select a category</option>
+      <option>Complaint</option>
+      <option>Request for Service</option>
+      <option>Positive Review</option>
+    </select>
+
+    <label>Your Message</label>
+    <textarea rows="5" placeholder="Type your message here..." required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<div class="form-container">
+  <h2 style="text-align:center; color: teal;">Quick Contact Form</h2>
+
+  <form>
+    <label>Preferred Contact Method</label>
+    <select required>
+      <option>Email</option>
+      <option>Phone</option>
+      <option>Either</option>
+    </select>
+
+    <label>Your Email</label>
+    <input type="email" placeholder="Enter your email" required>
+
+    <label>Short Message</label>
+    <textarea rows="3" placeholder="Write a short message..." required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+  
+</div>
+
+<footer>
+    <p>&copy; 2025 Sigma Snowcones</p>
+  
+  
+  <div id="legallinks">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+    <a href="#">Accessibility</a>
+    <a href="#">Cookie Policy</a>
+  </div>
+    <div class="socialmediaicon">
+    <a href="https://www.facebook.com" target="_blank">
+      <img src="images/facebook1.png" alt="Facebook Logo">
+    </a>
+  </div>
+  <div class="socialmediaicon">
+    <a href="https://www.instagram.com" target="_blank">
+      <img src="images/insta1.png" alt="Instagram Logo">
+    </a>
+  </div>
+  <div class="socialmediaicon">
+    <a href="https://www.twitter.com" target="_blank">
+      <img src="images/twitter1.png" alt="Twitter Logo">
+    </a>
+  </div>
+  <div class="socialmediaicon">
+    <a href="https://www.tiktok.com" target="_blank">
+      <img src="images/tic1.png" alt="TikTok Logo">
+
+</body>
+</html>
